@@ -1,2 +1,2 @@
 release :python manage.py migrate
-web: gunicorn forum --log-file=-
+web: gunicorn forum.wsgi --log-file=-

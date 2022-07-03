@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 import django_heroku
-from re import T
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,6 @@ SECRET_KEY = 'django-insecure-ckp=8ps#-a7_z5zf3m%z_6&^207&84$@#@@c7hagthugus+e6w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['forum-fpt.herokuapp.com']
 
 
@@ -96,7 +95,7 @@ WSGI_APPLICATION = 'forum.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backens.postgresql_psycopg2',
+        'ENGINE':'django.db.backends.postgresql_psycopg2',
         'NAME':'d3ik288oku9kef',
         'USER':'bgskjvcqifruqj',
         'PASSWORD':'a958c0192d5993df039c41700b269fb642915cba70b3600122d18ef6d65fa5ea',
