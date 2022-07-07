@@ -96,10 +96,10 @@ WSGI_APPLICATION = 'forum.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME':'d3ik288oku9kef',
-        'USER':'bgskjvcqifruqj',
-        'PASSWORD':'a958c0192d5993df039c41700b269fb642915cba70b3600122d18ef6d65fa5ea',
-        'HOST':'ec2-44-205-41-76.compute-1.amazonaws.com',
+        'NAME':'d53t89l0flu6vs',
+        'USER':'zdwzbwflhpzqes',
+        'PASSWORD':'97a8838dc987581311808ba3e084e73bcaa0d1f86f52ab7faa059ecf71fd3608',
+        'HOST':'ec2-54-161-255-125.compute-1.amazonaws.com',
         'PORT':'5432',
     }
 }

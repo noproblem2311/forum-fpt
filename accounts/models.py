@@ -14,6 +14,7 @@ class Profile(models.Model):
     phone = models.CharField(max_length=200, null=True)
     email= models.EmailField(max_length=200, null=True)
     created_at = models.DateTimeField(auto_now_add=True,null=True)
+    # FE ++ 1 seed 
     seeds=models.IntegerField( null=True) 
     flags= models.IntegerField( null=True)
     postList = models.IntegerField( null=True)

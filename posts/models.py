@@ -9,12 +9,14 @@ class Post(models.Model):
     Topic = models.ForeignKey(
         Topic,
         on_delete=models.CASCADE,
-        related_name='posts'
+        related_name='posts',
+        null=True
+
     )
     counter_seed = models.CharField(max_length=200, null=True) 
     counter_flag = models.CharField(max_length=200, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(null=True)
+    updated_at = models.DateTimeField(auto_now_add=True)
     
     creator = models.ForeignKey(User, on_delete=models.CASCADE)
     class Meta:
